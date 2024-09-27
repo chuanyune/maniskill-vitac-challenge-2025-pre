@@ -17,12 +17,12 @@
   <body>
     <section id="infinite" class="text-white tm-font-big tm-parallax">
       <!--导航栏-->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+        <div class="container">
 <!--          <div class="tm-next">-->
 <!--              <a href="#infinite" class="navbar-brand">Infinite Loop</a>-->
 <!--          </div>-->
-            
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars navbar-toggler-icon"></i>
           </button>
@@ -189,7 +189,7 @@
 
     <section id="timeline" class="timeline-section">
         <div class="container">
-            <h1 class="timeline-title">Timeline</h1>
+            <h1 class="section-title">Timeline</h1>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -322,6 +322,18 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" class="form-control" required>
                 </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
 
                 <div class="form-group">
                     <label for="discord">Discord Username:</label>
@@ -333,6 +345,13 @@
         </div>
     </section>
 
+    <section id="large-image-section" class="large-image-section">
+        <div class="container">
+            <img src="img/gallery-tn-03.jpg" alt="Large Image" class="large-image">
+        </div>
+    </section>
+
+
 
 
     <script src="js/jquery-1.9.1.min.js"></script>     
@@ -340,8 +359,33 @@
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
     <script>
+        $(document).ready(function() {
+            // 缓存导航链接和 section
+            var sections = $('section');
+            var navLinks = $('.tm-nav-link');
+
+            $(window).on('scroll', function() {
+                var currentScroll = $(this).scrollTop();
+
+                sections.each(function() {
+                    var sectionTop = $(this).offset().top - 100;  // 100px的缓冲空间，可以根据导航栏高度调整
+                    var sectionHeight = $(this).outerHeight();
+                    var sectionId = $(this).attr('id');
+
+                    // 判断滚动位置是否在当前section内
+                    if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+                        navLinks.removeClass('active');  // 移除所有链接的高亮状态
+                        $('.tm-nav-link[href="#' + sectionId + '"]').addClass('active');  // 给当前section对应的导航链接添加高亮状态
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+
 
       function getOffSet(){
         var _offset = 450;
@@ -349,7 +393,7 @@
 
         if(windowHeight > 500) {
           _offset = 400;
-        } 
+        }
         if(windowHeight > 680) {
           _offset = 300
         }
@@ -368,7 +412,7 @@
       }
 
       // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm
       var background_image_parallax = function($object, multiplier, forceSet){
         multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
         multiplier = 1 - multiplier;

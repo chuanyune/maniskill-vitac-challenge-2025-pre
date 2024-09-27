@@ -698,40 +698,34 @@ p {
 
 
 /*timeline*/
+/* 修改时间线整体的背景和字体颜色 */
 .timeline-section {
-  background-color: #000;
+  background-color: #ffffff; /* 背景颜色改为白色 */
   padding: 80px 0;
-  color: #fff;
+  color: #333; /* 设置文字颜色为深灰色 */
 }
 
-.section-title {
-  text-align: center;
-  color: #00ffff;
-  margin-bottom: 60px;
-  font-size: 3.5em;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
+/* 时间线整体设置 */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* 时间线中间的竖线 */
 .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
-  background-color: #00ffff;
+  background-color: #333; /* 时间线竖线颜色改为深灰色 */
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -1px;
-  box-shadow: 0 0 15px #00ffff;
+  box-shadow: 0 0 15px #ddd; /* 设置较浅的阴影颜色 */
 }
 
+/* 时间线项目的布局 */
 .timeline-item {
   padding: 10px 40px;
   position: relative;
@@ -739,6 +733,7 @@ p {
   width: 50%;
 }
 
+/* 奇数项靠左，偶数项靠右 */
 .timeline-item:nth-child(odd) {
   left: 0;
 }
@@ -747,44 +742,47 @@ p {
   left: 50%;
 }
 
+/* 时间线内容的背景和阴影效果 */
 .timeline-content {
   padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #f9f9f9; /* 内容背景设置为浅灰色 */
   position: relative;
   border-radius: 6px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* 设置较浅的阴影效果 */
   transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
 }
 
 .timeline-content:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #f0f0f0; /* 悬停时背景颜色稍微变深 */
   transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
+/* 修改标题颜色和大小 */
 .timeline-content h3 {
   margin-top: 0;
-  color: #00ffff;
+  color: #333; /* 标题颜色改为深灰色 */
   font-size: 1.4em;
   font-weight: 500;
 }
 
+/* 段落颜色设置为稍浅的灰色 */
 .timeline-content p {
   margin: 5px 0 0;
-  color: #bbb;
+  color: #666; /* 段落文字颜色设置为灰色 */
   font-size: 1.1em;
 }
 
+/* 时间线中的圆点 */
 .timeline-dot {
   width: 16px;
   height: 16px;
-  background-color: #00ffff;
+  background-color: #333; /* 圆点颜色设置为深灰色 */
   border-radius: 50%;
   position: absolute;
   top: 22px;
   z-index: 1;
-  box-shadow: 0 0 10px #00ffff;
+  box-shadow: 0 0 10px #ddd; /* 设置圆点的阴影 */
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
@@ -795,6 +793,7 @@ p {
   left: -8px;
 }
 
+/* 响应式设计：适应较小屏幕 */
 @media screen and (max-width: 600px) {
   .timeline::after {
     left: 31px;
@@ -822,15 +821,6 @@ p {
   .section-title {
     font-size: 2.5em;
   }
-}
-.timeline-section {
-  text-align: center;
-}
-.timeline-title {
-  margin-bottom: 30px;
-}
-.timeline {
-  text-align: left;
 }
 
 /*timeline*/
@@ -1068,6 +1058,24 @@ p {
 }
 
 .tm-nav-link.active {
-  color: red !important; /* 当前 section 对应的导航链接高亮显示为红色 */
+  color: black !important; /* 当前 section 对应的导航链接高亮显示为红色 */
   border-bottom: 2px solid red; /* 添加下划线 */
 }
+
+.large-image-section {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh; /* 设置为视窗高度 */
+  display: flex;
+  justify-content: center; /* 图片水平居中 */
+  align-items: center; /* 图片垂直居中 */
+  background-color: #f4f4f4; /* 你可以根据需要选择背景颜色 */
+}
+
+.large-image {
+  max-width: 100%; /* 确保图片不会超出屏幕宽度 */
+  height: auto; /* 保持图片比例 */
+  object-fit: cover; /* 如果图片有多余部分，确保它填充整个容器 */
+}
+
