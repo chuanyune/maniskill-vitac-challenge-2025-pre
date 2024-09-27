@@ -62,7 +62,7 @@
       <!--主标题-->
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title" style="font-size: 72px;">ManiSkill-ViTac: Vision-based-Tactile
+            <h2 class="tm-hero-title">ManiSkill-ViTac: Vision-based-Tactile
                 <br>Manipulation Skill Learning Challenge
                 <br>2025
             </h2>
@@ -79,13 +79,17 @@
                         <h2 class="tm-text-primary mb-4 tm-section-title">News</h2>
                         <div class="news-item">
                             <span class="news-circle"></span>
-                            <p class="mb-4 tm-intro-text">HI! <a href="https://fb.com/tooplate">link</a>.</p>
+                            <p class="mb-4 tm-intro-text">
+                                We have published an article detailing this challenge. Please click here to read it.
+                                <span class="rocket">🚀</span> <!-- 小火箭图案 -->
+                            </p>
                         </div>
                     </div>
                 </div>
             </div><!-- first row -->
         </div>
     </section>
+
 
     <section id="Overview" class="tm-section-pad-top">
         <div class="container">
@@ -104,123 +108,91 @@
 
     <section id="task" class="tm-section-pad-top">
         <div class="container">
-            <h2 class="tm-text-primary mb-4 tm-section-title">Our Challenge Tasks</h2>
+            <h2 class="tm-text-primary mb-4 tm-section-title">Challenge Tasks</h2>
             <p class="tm-intro-text mb-5">Here are the three main tasks for our challenge. Each task is designed to test different skills and abilities.</p>
 
-            <div class="row">
-                <!-- Task 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="task-slider">
+                <div class="task-wrapper">
+                    <!-- Task 1 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 1: </h4>
-                        <p class="task-desc">In this task,</p>
+                        <h4 class="task-title">Task 1: Data Analysis</h4>
+                        <p class="task-desc">In this task, participants will analyze a large dataset to extract meaningful insights and patterns. This will test your ability to work with data and draw conclusions.</p>
                     </div>
-                </div>
 
-                <!-- Task 2 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <!-- Task 2 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 2: </h4>
-                        <p class="task-desc">This task involves</p>
+                        <h4 class="task-title">Task 2: Algorithm Design</h4>
+                        <p class="task-desc">This task involves designing and implementing an efficient algorithm to solve a complex problem. It will evaluate your problem-solving skills and coding abilities.</p>
                     </div>
-                </div>
 
-                <!-- Task 3 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <!-- Task 3 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 3: </h4>
-                        <p class="task-desc">.</p>
+                        <h4 class="task-title">Task 3: System Architecture</h4>
+                        <p class="task-desc">The final task requires you to design a scalable system architecture for a given scenario. This will assess your understanding of system design principles and trade-offs.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="slider-controls">
+                <button id="prevBtn" class="slider-btn" disabled>Previous</button>
+                <button id="nextBtn" class="slider-btn">Next</button>
+            </div>
         </div>
     </section>
+
 
     <section id="leaderboard" class="leaderboard-section">
         <div class="container">
-            <h2 class="section-title">LeaderBoard</h2>
+            <h2 class="tm-section-title">LeaderBoard</h2>
             <div class="leaderboard-table">
                 <div class="leaderboard-header">
-                    <div class="header-cell">Column 1</div>
-                    <div class="header-cell">Column 2</div>
+                    <div class="header-cell">Team</div>
+                    <div class="header-cell">Task 1 (100)</div>
+                    <div class="header-cell">Task 2 (100)</div> <!-- 新增列 -->
                 </div>
                 <div class="leaderboard-row">
-                    <div class="row-cell">Row 1, Cell 1</div>
-                    <div class="row-cell">Row 1, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 2, Cell 1</div>
-                    <div class="row-cell">Row 2, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 3, Cell 1</div>
-                    <div class="row-cell">Row 3, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 4, Cell 1</div>
-                    <div class="row-cell">Row 4, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 5, Cell 1</div>
-                    <div class="row-cell">Row 5, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 6, Cell 1</div>
-                    <div class="row-cell">Row 6, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 7, Cell 1</div>
-                    <div class="row-cell">Row 7, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 8, Cell 1</div>
-                    <div class="row-cell">Row 8, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 9, Cell 1</div>
-                    <div class="row-cell">Row 9, Cell 2</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">Row 10, Cell 1</div>
-                    <div class="row-cell">Row 10, Cell 2</div>
+                    <div class="row-cell">THU</div>
+                    <div class="row-cell">100</div>
+                    <div class="row-cell">100</div> <!-- 新增单元格 -->
                 </div>
             </div>
         </div>
     </section>
 
+
     <section id="timeline" class="timeline-section">
         <div class="container">
-            <h1 class="section-title">Timeline</h1>
+            <h1 class="tm-section-title">Timeline</h1>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Workshop Announced</h3>
                         <p>March 29, 2024</p>
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Paper Submission Deadline</h3>
                         <p>May 4th, 2024 (Anywhere on Earth)</p>
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Paper Notification Deadline</h3>
                         <p>May 29th, 2024</p>
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Challenge Submission Deadlines</h3>
                         <p>May 2024. Check each challenge for the specific date.</p>
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Fifth Annual Embodied AI Workshop at CVPR</h3>
                         <p>Seattle Convention Center</p>
@@ -228,17 +200,19 @@
                         <p>8:50 AM - 6:00 PM PT</p>
                         <p>Summit 428</p>
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Challenge Winners Announced</h3>
                         <p>June 18, 2024 at the workshop. Check each challenge for specifics.</p>
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="Organizers" class="tm-section-pad-top">
         <div class="container">
@@ -251,32 +225,88 @@
                 </div>
 
                 <div class="col-lg-2 col-md-3 col-sm-4">
-                    <div class="organizer">
+                    <div class="organizer" onclick="window.location.href='https://callmeray.github.io/homepage/';" style="cursor: pointer;">
                         <img src="img/rui_chen.png" class="img-fluid rounded-circle" alt="Organizer 1">
                         <p class="mt-2">Rui Chen<br><small>Tsinghua University</small></p>
                     </div>
                 </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer" onclick="window.location.href='https://cseweb.ucsd.edu/~haosu/';" style="cursor: pointer;">
+                        <img src="img/haosu.jpeg" class="img-fluid rounded-circle" alt="Organizer 1">
+                        <p class="mt-2">Hao Su<br><small>UC San Diego</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer" onclick="window.location.href='https://shanluo.github.io/';" style="cursor: pointer;">
+                        <img src="img/shan_luo.png" class="img-fluid rounded-circle" alt="Organizer 1">
+                        <p class="mt-2">Shan Luo<br><small>King's College London</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer" onclick="window.location.href='https://lepora.com/';" style="cursor: pointer;">
+                        <img src="img/nathan_lepora.jpg" class="img-fluid rounded-circle" alt="Organizer 1">
+                        <p class="mt-2">Nathan Lepora<br><small>University of Bristol</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer" onclick="window.location.href='https://lasr.org/';" style="cursor: pointer;">
+                        <img src="img/roberto_calandra.jpg" class="img-fluid rounded-circle" alt="Organizer 1">
+                        <p class="mt-2">Roberto Calandra<br><small>TU Dresden</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer" onclick="window.location.href='https://www.me.tsinghua.edu.cn/en/info/1081/1202.htm';" style="cursor: pointer;">
+                        <img src="img/jing_xu.jpg" class="img-fluid rounded-circle" alt="Organizer 1">
+                        <p class="mt-2">Jing Xu<br><small>Tsinghua University</small></p>
+                    </div>
+                </div>
 
-                <!-- 其他 Faculty 成员 -->
-                <!-- 请根据需要复制并修改上面的 div，替换图片路径和姓名 -->
+
             </div>
 
-            <!-- Student Section -->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-12">-->
-<!--                    <h3 class="tm-text-secondary">Student</h3>-->
-<!--                </div>-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="tm-text-secondary">Student</h3>
+                </div>
 
-<!--                <div class="col-lg-2 col-md-3 col-sm-4">-->
-<!--                    <div class="organizer">-->
-<!--                        <img src="path_to_image_2.jpg" class="img-fluid rounded-circle" alt="Student 1">-->
-<!--                        <p class="mt-2">Weihang Chen<br><small>Tsinghua University</small></p>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer" onclick="window.location.href='https://cyliizyz.github.io/';" style="cursor: pointer;">
+                        <img src="img/chuanyu_li.jpg" class="img-fluid rounded-circle" alt="Organizer 1">
+                        <p class="mt-2">Chuanyu Li<br><small>Sichuan  University</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer">
+                        <img src="img/chuanyu_li.jpg" class="img-fluid rounded-circle" alt="Student 1">
+                        <p class="mt-2">Chuanyu Li<br><small>Sichuan University</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer">
+                        <img src="img/chuanyu_li.jpg" class="img-fluid rounded-circle" alt="Student 1">
+                        <p class="mt-2">Chuanyu Li<br><small>Sichuan University</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer">
+                        <img src="img/chuanyu_li.jpg" class="img-fluid rounded-circle" alt="Student 1">
+                        <p class="mt-2">Chuanyu Li<br><small>Sichuan University</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer">
+                        <img src="img/chuanyu_li.jpg" class="img-fluid rounded-circle" alt="Student 1">
+                        <p class="mt-2">Chuanyu Li<br><small>Sichuan University</small></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="organizer">
+                        <img src="img/chuanyu_li.jpg" class="img-fluid rounded-circle" alt="Student 1">
+                        <p class="mt-2">Chuanyu Li<br><small>Sichuan University</small></p>
+                    </div>
+                </div>
 
-<!--                &lt;!&ndash; 其他 Student 成员 &ndash;&gt;-->
-<!--                &lt;!&ndash; 请根据需要复制并修改上面的 div，替换图片路径和姓名 &ndash;&gt;-->
-<!--            </div>-->
+            </div>
         </div>
     </section>
 
@@ -291,6 +321,7 @@
                     <div class="contact-item text-center">
                         <img src="img/Discord.png" alt="Discord" class="contact-logo">
                         <h4 class="contact-title">Join us on Discord</h4>
+                        <h4>Recommended</h4>
                         <p class="contact-info"><a href="https://discord.com/invite/your-invite-link" target="_blank">discord.com/your-invite-link</a></p>
                     </div>
                 </div>
@@ -300,7 +331,7 @@
                     <div class="contact-item text-center">
                         <img src="img/Gmail.png" alt="Gmail" class="contact-logo">
                         <h4 class="contact-title">Email us at Gmail</h4>
-                        <p class="contact-info"><a href="mailto:your-email@gmail.com">your-email@gmail.com</a></p>
+                        <p class="contact-info"><a href="mailto:maniskill.vitac@gmail.com">maniskill.vitac@gmail.com</a></p>
                     </div>
                 </div>
             </div>
@@ -319,18 +350,6 @@
                     <input type="text" id="name" name="name" class="form-control" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" class="form-control" required>
@@ -361,6 +380,33 @@
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        const taskWrapper = document.querySelector('.task-wrapper');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentTask = 0;
+        const totalTasks = document.querySelectorAll('.task-item').length;
+
+        function updateSlider() {
+            taskWrapper.style.transform = `translateX(-${currentTask * 100}%)`;
+            prevBtn.disabled = currentTask === 0;
+            nextBtn.disabled = currentTask === totalTasks - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentTask > 0) {
+                currentTask--;
+                updateSlider();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentTask < totalTasks - 1) {
+                currentTask++;
+                updateSlider();
+            }
+        });
+    </script>
     <script>
         $(document).ready(function() {
             // 缓存导航链接和 section
