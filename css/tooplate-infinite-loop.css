@@ -927,21 +927,6 @@ p {
     font-size: 2em;
   }
 }
-.leaderboard-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.header-cell, .row-cell {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.leaderboard-header {
-  font-weight: bold;
-  border-bottom: 2px solid #000;
-}
-
 
 
 /*leaderboard*/
