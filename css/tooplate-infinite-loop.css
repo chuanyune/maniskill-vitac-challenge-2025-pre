@@ -9,8 +9,8 @@ https://www.tooplate.com/view/2117-infinite-loop
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 
 body {
-	font-family: "Raleway", sans-serif;
-	font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
   color: #707070;
   margin: 0;
   padding: 0;
@@ -55,7 +55,7 @@ blockquote {
 }
 
 .tm-text-primary {
-  color: #37A;
+  color: black;
 }
 
 .tm-font-big {
@@ -109,8 +109,11 @@ blockquote {
 }
 
 .tm-nav-link {
-  color: white;
+  color: black !important;  /* 使用黑色字体 */
+  font-size: 18px;           /* 调整字体大小 */
+  font-weight: bold;         /* 增加字体粗细，保持视觉效果 */
 }
+
 
 .tm-navbar.scroll .tm-nav-link {
   color: #369;
@@ -145,7 +148,7 @@ blockquote {
 /* Hero */
 
 #infinite {
-	background-color: #222;
+  background-color: #222;
   background-image: url(../img/infinite-loop-01.jpg);
   background-repeat: no-repeat;
   height: 100vh;
@@ -227,11 +230,11 @@ blockquote {
 }
 
 .tm-down-arrow {
-  	color: #FFF;
-    cursor: pointer;
-    background: #357;
-    padding: 15px 40px;
-    transition: all 0.3s ease;
+  color: #FFF;
+  cursor: pointer;
+  background: #357;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
 }
 
 .tm-down-arrow:hover,
@@ -247,13 +250,8 @@ blockquote {
   padding-bottom: 100px;
 }
 
-.tm-section-title {
-  font-size: 2.6rem;
-  font-weight: normal;
-}
-
 .tm-intro-text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .tm-icon {
@@ -262,7 +260,7 @@ blockquote {
 }
 
 .tm-continue {
-	padding: 20px 0 30px 0;
+  padding: 20px 0 30px 0;
 }
 
 /* Testimonials */
@@ -506,8 +504,8 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-container-gallery {
-	padding-top: 30px;
-	}
+  padding-top: 30px;
+}
 
 /* Contact */
 
@@ -545,8 +543,8 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-input {
-	margin: 0 0 20px 0;
-	width: 90%;
+  margin: 0 0 20px 0;
+  width: 90%;
   padding: 8px 20px;
   border-radius: 6px;
   border: 1px solid white;
@@ -555,16 +553,16 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-btn-submit {
-	font-size: 0.9em;
-	color: #fff;
-	background-color: #369;
-	width: 50%;
-	margin-bottom: 60px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #369;
+  width: 50%;
+  margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
-	color: #fff;
-	background-color: #38B;
+  color: #fff;
+  background-color: #38B;
 }
 
 ::placeholder {
@@ -592,11 +590,11 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-footer a {
-	color: #fff;
+  color: #fff;
 }
 
 .tm-footer a:hover {
-	color: #9CF;
+  color: #9CF;
 }
 
 .tm-footer-link {
@@ -674,7 +672,7 @@ p {
 
   .navbar-collapse .nav-link {
     color: #707070;
-	padding-right: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -928,8 +926,148 @@ p {
   }
 }
 
-
 /*leaderboard*/
 
+/*news*/
+
+.news-item {
+  display: flex;
+  align-items: flex-start; /* 使圆圈与正文第一行对齐 */
+}
+
+.news-circle {
+  width: 10px; /* 圆圈的宽度 */
+  height: 10px; /* 圆圈的高度 */
+  background-color: black; /* 圆圈的颜色 */
+  border-radius: 50%; /* 圆形 */
+  margin-right: 10px; /* 圆圈与文本之间的间距 */
+  margin-top: 20px; /* 可根据需要调整，以精确对齐 */
+}
 
 
+/*news*/
+
+
+
+/*organizer*/
+.tm-text-secondary {
+  font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+  text-align: left; /* 居左对齐 */
+  margin-bottom: 20px; /* 调整小标题与内容之间的间距 */
+  /*padding-left: 20px; !* 调整左边距，可根据需要调整数值 *!*/
+}
+
+.organizer {
+  text-align: center;
+  margin-bottom: 30px; /* 控制每个卡片之间的间距 */
+}
+
+.organizer img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px; /* 调整图片与名字之间的距离 */
+  border-radius: 50%; /* 保持圆形图片 */
+}
+
+.organizer p {
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+  margin-bottom: 5px; /* 调整名字与学校之间的间距 */
+}
+
+/*organizer*/
+
+
+#Challenges {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f4f4f4; /* 给这个部分一个淡背景色 */
+}
+
+.tm-section-title {
+  font-size: 3em; /* 调整字体大小 */
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.tm-intro-text {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.task-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.task-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.task-desc {
+  font-size: 1em;
+  color: #555;
+}
+
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f9f9f9;
+}
+
+#SignUp .tm-section-title {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.tm-intro-text {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.tm-nav-link.active {
+  color: red !important; /* 当前 section 对应的导航链接高亮显示为红色 */
+  border-bottom: 2px solid red; /* 添加下划线 */
+}
