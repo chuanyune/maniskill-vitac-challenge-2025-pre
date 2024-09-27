@@ -97,15 +97,30 @@
                 <div class="col-lg-12 col-xl-12">
                     <div class="tm-intro-text-container">
                         <h2 class="tm-text-primary mb-4 tm-section-title">Overview</h2>
+
                         <p class="mb-4 tm-intro-text">
-                            This challenge is...
+                            Vision-based tactile sensing has witnessed great progress in recent years. It can provide contact information which is important for manipulation skill learning. However, many research labs, particularly those lacking hardware expertise, face challenges in building physical experimental platforms and concentrating their research efforts on manipulation skill learning.
                         </p>
+
+                        <p class="mb-4 tm-intro-text">
+                            The ManiSkill-ViTac Challenge aims to provide a standardized benchmarking platform for evaluating the performance of vision-based-tactile manipulation skill learning in real-world robot applications. This challenge focuses specifically on assessing skill learning. Therefore, to enable fair comparison between approaches, the challenge uses a unified tactile sensor type and simulator across all participants.
+                        </p>
+
+                        <p class="mb-4 tm-intro-text">
+                            To the best of our knowledge, it is the first open challenge in this field. We hope it can bring together world-wide researchers from tactile sensing and policy learning and help nurture the development of advanced manipulation skill learning frameworks based on tactile sensing.
+                        </p>
+
+                        <h3 class="tm-text-primary mb-3">The ManiSkill-ViTac Challenge features:</h3>
+                        <ul class="tm-list-style-1 tm-list-primary">
+                            <li>An open-source general-purpose tactile sensor physics simulator</li>
+                            <li>Real-world robot evaluation</li>
+                            <li>Two high-precision manipulation tasks that closely resemble real-world applications</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="task" class="tm-section-pad-top">
         <div class="container">
             <h2 class="tm-text-primary mb-4 tm-section-title">Challenge Tasks</h2>
@@ -115,19 +130,23 @@
                 <div class="task-wrapper">
                     <!-- Task 1 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 1: Data Analysis</h4>
-                        <p class="task-desc">In this task, participants will analyze a large dataset to extract meaningful insights and patterns. This will test your ability to work with data and draw conclusions.</p>
+                        <h4 class="task-title">Task 1: Vision-based-Tactile Manipulation</h4>
+                        <p class="task-desc">The part includes two tasks: peg insertion and lock opening. Similar to the ManiSkill challenge, we focus on evaluating the policy’s generalizability. Each task includes multiple objects of different shapes (e.g., the peg can be a cuboid or a trapezoid, and keys can have two or three teeth), which are unknown during evaluation. Therefore, the policy needs to be able to generalize to different plugs and keys.</p>
+                        <div class="task-gifs">
+                            <img src="img/peg-insertion-sim2real.gif" alt="Lock Opening GIF" class="task-gif">
+                            <img src="img/lock-opening-sim2real.gif" alt="Peg Insertion GIF" class="task-gif">
+                        </div>
                     </div>
 
                     <!-- Task 2 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 2: Algorithm Design</h4>
+                        <h4 class="task-title">Task 2: Visio + Tactile Manipulation</h4>
                         <p class="task-desc">This task involves designing and implementing an efficient algorithm to solve a complex problem. It will evaluate your problem-solving skills and coding abilities.</p>
                     </div>
 
                     <!-- Task 3 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 3: System Architecture</h4>
+                        <h4 class="task-title">Task 3: Sensor Structure Design</h4>
                         <p class="task-desc">The final task requires you to design a scalable system architecture for a given scenario. This will assess your understanding of system design principles and trade-offs.</p>
                     </div>
                 </div>
@@ -344,34 +363,23 @@
             <h2 class="tm-text-primary mb-4 tm-section-title">Sign Up for the Challenge</h2>
             <p class="tm-intro-text mb-5">Fill in the form below to register for the challenge. We will contact you with further details.</p>
 
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="discord">Discord Username:</label>
-                    <input type="text" id="discord" name="discord" class="form-control" required>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-            </form>
+            <!-- Google Form Embed -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdszAeDmJtT2mQmU35QKxI2bNYiJBDF8UXhU0K3JnmWuPIruQ/viewform?usp=sf_link"
+                    width="100%"
+                    height="800px"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">
+                Loading…
+            </iframe>
         </div>
     </section>
 
     <section id="large-image-section" class="large-image-section">
         <div class="container">
-            <img src="img/gallery-tn-03.jpg" alt="Large Image" class="large-image">
+<!--            <img src="img/gallery-tn-03.jpg" alt="Large Image" class="large-image">-->
         </div>
     </section>
-
-
 
 
     <script src="js/jquery-1.9.1.min.js"></script>     
