@@ -856,95 +856,39 @@ p {
 .timeline-item:nth-child(4) { animation-delay: 0.4s; }
 .timeline-item:nth-child(5) { animation-delay: 0.5s; }
 .timeline-item:nth-child(6) { animation-delay: 0.6s; }
+
+
 /*leaderboard*/
-.leaderboard-section {
-  background-color: #f8f9fa;
-  padding: 60px 0;
-}
-
-.section-title {
-  text-align: center;
-  color: #000;
-  margin-bottom: 40px;
-  font-size: 3em;
-}
-
 .leaderboard-table {
-  max-width: 1000px; /* 增加最大宽度 */
-  width: 90%;
+  width: 100%;
+  max-width: 1200px; /* 扩展表格宽度以适应新列 */
   margin: 0 auto;
   background-color: #fff;
+  border-collapse: collapse; /* 去除表格之间的间距 */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
-.leaderboard-header {
-  display: flex;
+.leaderboard-table th, .leaderboard-table td {
+  border: 1px solid #ddd; /* 增加边框 */
+  padding: 16px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.leaderboard-table thead th {
   background-color: #000;
   color: #fff;
   font-weight: bold;
 }
 
-.header-cell {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-  font-size: 1.2em; /* 增加字体大小 */
-}
-
-.leaderboard-row {
-  display: flex;
-  border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.3s ease;
-}
-
-.leaderboard-row:last-child {
-  border-bottom: none;
-}
-
-.leaderboard-row:nth-child(even) {
+.leaderboard-table tbody tr:nth-child(even) {
   background-color: #f5f5f5;
 }
 
-.leaderboard-row:hover {
+.leaderboard-table tbody tr:hover {
   background-color: #e8e8e8;
-}
-
-.row-cell {
-  flex: 1;
-  padding: 16px 20px;
-  text-align: center;
-  color: #333;
-  font-size: 1.1em; /* 增加字体大小 */
-}
-
-@media (max-width: 768px) {
-  .leaderboard-table {
-    font-size: 16px;
-  }
-
-  .header-cell, .row-cell {
-    padding: 14px;
-  }
-
-  .section-title {
-    font-size: 2.5em;
-  }
-}
-
-@media (max-width: 480px) {
-  .leaderboard-table {
-    font-size: 14px;
-  }
-
-  .header-cell, .row-cell {
-    padding: 12px;
-  }
-
-  .section-title {
-    font-size: 2em;
-  }
 }
 
 /*leaderboard*/
@@ -953,18 +897,73 @@ p {
 
 .news-item {
   display: flex;
-  align-items: flex-start; /* 使圆圈与正文第一行对齐 */
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-date {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 2px solid #007bff;
+  min-width: 120px;
+}
+
+.news-date .date {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.news-date .month,
+.news-date .year {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.news-date .month {
+  margin-right: 5px;
+}
+
+.news-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center; /* 使内容居中 */
 }
 
 .news-circle {
-  width: 10px; /* 圆圈的宽度 */
-  height: 10px; /* 圆圈的高度 */
-  background-color: black; /* 圆圈的颜色 */
-  border-radius: 50%; /* 圆形 */
-  margin-right: 10px; /* 圆圈与文本之间的间距 */
-  margin-top: 20px; /* 可根据需要调整，以精确对齐 */
+  width: 8px;
+  height: 8px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
+.tm-intro-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center; /* 使文本居中 */
+}
+
+.rocket {
+  display: inline-block;
+  margin-left: 5px;
+  animation: rocketFloat 2s infinite ease-in-out;
+}
+
+@keyframes rocketFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
 
 /*news*/
 

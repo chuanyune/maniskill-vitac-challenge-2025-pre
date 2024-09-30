@@ -19,9 +19,6 @@
       <!--导航栏-->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
-<!--          <div class="tm-next">-->
-<!--              <a href="#infinite" class="navbar-brand">Infinite Loop</a>-->
-<!--          </div>-->
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars navbar-toggler-icon"></i>
@@ -65,7 +62,7 @@
       <!--主标题-->
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">ManiSkill-ViTac: Vision-based-Tactile
+            <h2 class="tm-hero-title">ManiSkill-ViTac: Tactile-Vision-Fusion
                 <br>Manipulation Skill Learning Challenge
                 <br>2025
             </h2>
@@ -76,20 +73,27 @@
 
     <section id="News" class="tm-section-pad-top">
         <div class="container">
-            <div class="row tm-content-box"><!-- first row -->
+            <div class="row tm-content-box">
                 <div class="col-lg-12 col-xl-12">
                     <div class="tm-intro-text-container">
                         <h2 class="tm-text-primary mb-4 tm-section-title">News</h2>
                         <div class="news-item">
-                            <span class="news-circle"></span>
-                            <p class="mb-4 tm-intro-text">
-                                We have published an article detailing this challenge. Please click here to read it.
-                                <span class="rocket">🚀</span> <!-- 小火箭图案 -->
-                            </p>
+                            <div class="news-date">
+                                <span class="date">30</span>
+                                <span class="month">SEP</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <span class="news-circle"></span>
+                                <p class="mb-4 tm-intro-text">
+                                    We have published an article detailing this challenge.<a href="">Please click here to read it.</a>
+                                    <span class="rocket">🚀</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- first row -->
+            </div>
         </div>
     </section>
 
@@ -110,7 +114,8 @@
                         </p>
 
                         <p class="mb-4 tm-intro-text">
-                            To the best of our knowledge, it is the first open challenge in this field. We hope it can bring together world-wide researchers from tactile sensing and policy learning and help nurture the development of advanced manipulation skill learning frameworks based on tactile sensing.
+                            The challenge builds on <a href="https://ai-workshops.github.io/maniskill-vitac-challenge-2024/">ManiSkill-Vitac-Challenge-2024</a>
+                            by introducing two new tasks: integrating visual and tactile feedback in manipulation, and designing sensor structures. Please refer to our paper for more details.
                         </p>
 
                         <h3 class="tm-text-primary mb-3">The ManiSkill-ViTac Challenge features:</h3>
@@ -184,7 +189,7 @@
                     <!-- Task 3 -->
                     <div class="task-item">
                         <h4 class="task-title">Task 3: Sensor Structure Design</h4>
-                        <p class="task-desc">The final task requires you to design a scalable system architecture for a given scenario. This will assess your understanding of system design principles and trade-offs.</p>
+                        <p class="task-desc">This section is subjectively evaluated, where teams design sensors following our tutorial and submit either SLDPRT or STL files. The judges will score this, and it accounts for 20% of the total score.</p>
                     </div>
                 </div>
             </div>
@@ -200,20 +205,36 @@
     <section id="leaderboard" class="leaderboard-section">
         <div class="container">
             <h2 class="tm-section-title">LeaderBoard</h2>
-            <div class="leaderboard-table">
-                <div class="leaderboard-header">
-                    <div class="header-cell">Team</div>
-                    <div class="header-cell">Task 1 (100)</div>
-                    <div class="header-cell">Task 2 (100)</div> <!-- 新增列 -->
-                </div>
-                <div class="leaderboard-row">
-                    <div class="row-cell">THU</div>
-                    <div class="row-cell">100</div>
-                    <div class="row-cell">100</div> <!-- 新增单元格 -->
-                </div>
-            </div>
+            <table class="leaderboard-table">
+                <!-- 表头部分 -->
+                <thead>
+                <tr>
+                    <th rowspan="2">Team</th> <!-- Team 列合并两行 -->
+                    <th colspan="2">Task 1 (100)</th> <!-- Task 1 列分为两个子任务 -->
+                    <th rowspan="2">Task 2 (100)</th> <!-- Task 2 列合并两行 -->
+                    <th rowspan="2">Task 3 (100)</th> <!-- Task 3 列合并两行 -->
+                    <th rowspan="2">Total (300)</th> <!-- 总分列合并两行 -->
+                </tr>
+                <tr>
+                    <th>Subtask 1.1 (50)</th>
+                    <th>Subtask 1.2 (50)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>THU</td> <!-- Team 名称 -->
+                    <td>50</td> <!-- Subtask 1.1 成绩 -->
+                    <td>50</td> <!-- Subtask 1.2 成绩 -->
+                    <td>100</td> <!-- Task 2 成绩 -->
+                    <td>90</td> <!-- Task 3 成绩 -->
+                    <td>290</td> <!-- 总分 -->
+
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
+
 
 
     <section id="timeline" class="timeline-section">
@@ -398,7 +419,7 @@
     <section id="SignUp" class="tm-section-pad-top">
         <div class="container">
             <h2 class="tm-text-primary mb-4 tm-section-title">Sign Up for the Challenge</h2>
-            <p class="tm-intro-text mb-5">Fill in the form below to register for the challenge. We will contact you with further details.</p>
+            <p class="tm-intro-text mb-5">Register a team to make submissions.Teams shall have no more than one leader and one instructor. The maximum number of additional team members is four. Fill in the form below to register for the challenge. We will contact you with further details.</p>
 
             <!-- Google Form Embed -->
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdszAeDmJtT2mQmU35QKxI2bNYiJBDF8UXhU0K3JnmWuPIruQ/viewform?usp=sf_link"
