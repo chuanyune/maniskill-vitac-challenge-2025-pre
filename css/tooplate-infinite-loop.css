@@ -859,38 +859,57 @@ p {
 
 
 /*leaderboard*/
-.leaderboard-table {
-  width: 100%;
-  max-width: 1200px; /* 扩展表格宽度以适应新列 */
+.leaderboard-section {
+  background-color: #f5f7fa;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: #fff;
-  border-collapse: collapse; /* 去除表格之间的间距 */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  padding: 0 20px;
 }
-
-.leaderboard-table th, .leaderboard-table td {
-  border: 1px solid #ddd; /* 增加边框 */
-  padding: 16px;
+.tm-section-title {
   text-align: center;
-  font-size: 1.1em;
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 30px;
 }
-
-.leaderboard-table thead th {
-  background-color: #000;
-  color: #fff;
+.leaderboard-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 15px;
+  -webkit-overflow-scrolling: touch;
+}
+.leaderboard-table {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.leaderboard-table:last-child {
+  margin-right: 0;
+}
+.leaderboard-table th, .leaderboard-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+.leaderboard-table thead {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.leaderboard-table th {
   font-weight: bold;
 }
-
 .leaderboard-table tbody tr:nth-child(even) {
-  background-color: #f5f5f5;
+  background-color: #f8f9fa;
 }
-
 .leaderboard-table tbody tr:hover {
-  background-color: #e8e8e8;
+  background-color: #e8f4f8;
 }
-
 /*leaderboard*/
 
 /*news*/
@@ -1177,103 +1196,32 @@ p {
   height: auto;
   border-radius: 4px;
 }
-
 .challenge-format-section {
-  background-color: #f8f9fa;
-  padding: 80px 0;
+  background-color: #f5f7fa;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section-title {
+.tm-text-primary {
+  color: #2c3e50;
+  font-size: 2.5em;
   text-align: center;
-  color: #2c3e50;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5em;
-  margin-bottom: 50px;
-  position: relative;
+  margin-bottom: 30px;
 }
-
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #3498db;
-  margin: 20px auto 0;
-}
-
-.format-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.format-item {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.challenge-content {
+  background-color: white;
   padding: 30px;
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.format-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.format-icon {
-  font-size: 2.5em;
-  margin-right: 30px;
-  background-color: #e8f4fd;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.format-item h3 {
-  color: #2c3e50;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4em;
+.challenge-content h3 {
+  color: #3498db;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
-
-.format-item p {
+.challenge-content p, .challenge-content ul {
   color: #34495e;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
   line-height: 1.6;
-  margin: 0;
 }
-
-@media (max-width: 768px) {
-  .format-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .format-icon {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+.challenge-content ul {
+  padding-left: 20px;
 }
-
-.format-item {
-  position: relative;
-  z-index: 1;
-}
-
-.format-item:nth-child(1) .format-icon { background-color: #e8f4fd; }
-.format-item:nth-child(2) .format-icon { background-color: #e8f8f5; }
-.format-item:nth-child(3) .format-icon { background-color: #fef5e7; }
-.format-item:nth-child(4) .format-icon { background-color: #f9ebea; }
-.format-item:nth-child(5) .format-icon { background-color: #eafaf1; }

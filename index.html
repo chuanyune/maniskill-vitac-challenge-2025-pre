@@ -38,7 +38,7 @@
                   <a class="nav-link tm-nav-link" href="#Challenge-format">Format</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#task">Tasks</a>
+                  <a class="nav-link tm-nav-link" href="#Tracks">Tracks</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#leaderboard">Leaderboard</a>
@@ -106,23 +106,18 @@
                         <h2 class="tm-text-primary mb-4 tm-section-title">Overview</h2>
 
                         <p class="mb-4 tm-intro-text">
-                            Vision-based tactile sensing has witnessed great progress in recent years. It can provide contact information which is important for manipulation skill learning. However, many research labs, particularly those lacking hardware expertise, face challenges in building physical experimental platforms and concentrating their research efforts on manipulation skill learning.
+                            The ManiSkill-Vitac Challenge 2025 builds upon last year's <a href="https://ai-workshops.github.io/maniskill-vitac-challenge-2024/">ManiSkill-Vitac-Challenge-2024</a>, which focused on tactile sensing. This year, we are offering three distinct tracks, each corresponding to different skills and capabilities.
                         </p>
-
                         <p class="mb-4 tm-intro-text">
-                            The ManiSkill-ViTac Challenge aims to provide a standardized benchmarking platform for evaluating the performance of vision-based-tactile manipulation skill learning in real-world robot applications. This challenge focuses specifically on assessing skill learning. Therefore, to enable fair comparison between approaches, the challenge uses a unified tactile sensor type and simulator across all participants.
+                            To the best of our knowledge, this is the first open challenge in this field. We hope it will bring together researchers from around the world, fostering collaboration between experts in tactile sensing and policy learning, and driving the development of advanced manipulation skill learning frameworks based on tactile sensing.
                         </p>
-
-                        <p class="mb-4 tm-intro-text">
-                            The challenge builds on <a href="https://ai-workshops.github.io/maniskill-vitac-challenge-2024/">ManiSkill-Vitac-Challenge-2024</a>
-                            by introducing two new tasks: integrating visual and tactile feedback in manipulation, and designing sensor structures. Please refer to our paper for more details.
-                        </p>
-
                         <h3 class="tm-text-primary mb-3">The ManiSkill-ViTac Challenge features:</h3>
                         <ul class="tm-list-style-1 tm-list-primary">
-                            <li>An open-source general-purpose tactile sensor physics simulator</li>
                             <li>Real-world robot evaluation</li>
+                            <li>Tactile vision fusion manipulation</li>
+                            <li>An open-source general-purpose tactile sensor physics simulator</li>
                             <li>Two high-precision manipulation tasks that closely resemble real-world applications</li>
+
                         </ul>
                     </div>
                 </div>
@@ -133,62 +128,66 @@
     <section id="Challenge-format" class="challenge-format-section">
         <div class="container">
             <h2 class="tm-text-primary mb-4 tm-section-title">Challenge Format</h2>
-            <div class="format-container">
-                <div class="format-item">
-                    <div class="format-icon">🔬</div>
-                    <h3>Phase 1: Data Exploration</h3>
-                    <p>Participants will receive access to the ManiSkill-ViTac dataset. This phase focuses on understanding the data and developing initial approaches.</p>
-                </div>
-                <div class="format-item">
-                    <div class="format-icon">💻</div>
-                    <h3>Phase 2: Model Development</h3>
-                    <p>Teams will develop their vision-based tactile manipulation models. Regular checkpoints will be provided to track progress.</p>
-                </div>
-                <div class="format-item">
-                    <div class="format-icon">🏋️</div>
-                    <h3>Phase 3: Training and Optimization</h3>
-                    <p>Participants will train their models on the provided dataset and optimize performance. Limited test runs will be allowed.</p>
-                </div>
-                <div class="format-item">
-                    <div class="format-icon">🎯</div>
-                    <h3>Phase 4: Final Evaluation</h3>
-                    <p>Models will be tested on a held-out test set. Performance will be evaluated based on accuracy, efficiency, and generalization.</p>
-                </div>
-                <div class="format-item">
-                    <div class="format-icon">📊</div>
-                    <h3>Phase 5: Results and Analysis</h3>
-                    <p>Final results will be announced. Top-performing teams will be invited to present their approaches at the workshop.</p>
-                </div>
+            <div class="challenge-content">
+                <p>This challenge consists of three independent tracks. Participating teams can choose to compete in 1-3 tracks when registering. Each track is completely separate and does not interfere with the others. The evaluation criteria and advancement standards for each track are different.</p>
+
+                <h3>Track 1: Vision-based-tactile</h3>
+                <ul>
+                    <li><strong>Input Information:</strong> Tactile information only</li>
+                    <li><strong>Stage 1:</strong> Ranking based on evaluation results in simulation</li>
+                    <li><strong>Stage 2:</strong> Only teams advancing from Stage 1 participate, submitting their best checkpoint</li>
+                    <li><strong>Scoring Criteria:</strong> Success rate of Task 1 * 50 + Success rate of Task 2 * 50</li>
+                </ul>
+
+                <h3>Track 2: Tactile vision fusion</h3>
+                <ul>
+                    <li><strong>Input Information:</strong> Tactile information + RealSense visual information</li>
+                    <li><strong>Stage 1:</strong> Ranking based on evaluation results in simulation</li>
+                    <li><strong>Stage 2:</strong> Only teams advancing from Stage 1 participate, submitting their best checkpoint</li>
+                    <li><strong>Scoring Criteria:</strong> Success rate * 100</li>
+                </ul>
+
+                <h3>Track 3: Sensor structure design</h3>
+                <ul>
+                    <li><strong>Task Type:</strong> Subjective task</li>
+                    <li><strong>Design Content:</strong> Design the shape of the sensor's silicone structure using the provided method</li>
+                    <li><strong>Evaluation Method:</strong> Assessed by the organizers</li>
+                </ul>
+
+                <h3>Participation Guidelines</h3>
+                <ul>
+                    <li>Teams can choose to participate in 1-3 tracks</li>
+                    <li>Each track is conducted independently and does not affect the others</li>
+                    <li>Stage 2 of Track 1 and Track 2 is only open to teams that succeed in Stage 1</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="task" class="tm-section-pad-top">
+    <section id="Tracks" class="tm-section-pad-top">
         <div class="container">
-            <h2 class="tm-text-primary mb-4 tm-section-title">Challenge Tasks</h2>
-            <p class="tm-intro-text mb-5">Here are the three main tasks for our challenge. Each task is designed to test different skills and abilities.</p>
+            <h2 class="tm-text-primary mb-4 tm-section-title">Tracks</h2>
+            <p class="tm-intro-text mb-5">Here are the three main tracks for our challenge. Each track is designed to test different skills and abilities.</p>
 
             <div class="task-slider">
                 <div class="task-wrapper">
-                    <!-- Task 1 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 1: Vision-based-Tactile Manipulation</h4>
-                        <p class="task-desc">The part includes two tasks: peg insertion and lock opening. Similar to the ManiSkill challenge, we focus on evaluating the policy’s generalizability. Each task includes multiple objects of different shapes (e.g., the peg can be a cuboid or a trapezoid, and keys can have two or three teeth), which are unknown during evaluation. Therefore, the policy needs to be able to generalize to different plugs and keys.</p>
+                        <h4 class="task-title">Track 1: Vision-based-Tactile Manipulation</h4>
+                        <p class="task-desc">Thetrack includes two tasks: peg insertion and lock opening. Similar to the ManiSkill challenge, we focus on evaluating the policy’s generalizability. Each task includes multiple objects of different shapes (e.g., the peg can be a cuboid or a trapezoid, and keys can have two or three teeth), which are unknown during evaluation. Therefore, the policy needs to be able to generalize to different plugs and keys.</p>
                         <div class="task-gifs">
                             <img src="img/peg-insertion-sim2real.gif" alt="Lock Opening GIF" class="task-gif">
                             <img src="img/lock-opening-sim2real.gif" alt="Peg Insertion GIF" class="task-gif">
                         </div>
                     </div>
 
-                    <!-- Task 2 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 2: Visio + Tactile Manipulation</h4>
-                        <p class="task-desc">This task involves designing and implementing an efficient algorithm to solve a complex problem. It will evaluate your problem-solving skills and coding abilities.</p>
+                        <h4 class="task-title">Track 2: Tactile-Vision-Fusion Manipulation</h4>
+                        <p class="task-desc">In this task, the experimental setup remains unchanged. However, compared to the only tactile task, a Realsense D415 is used to provide visual information, and the distance between the peg and the hole is increased. The gripper needs to determine which hole to insert the peg into based on the shape of the gripped peg. Since the tactile information remains the same during the approach to the hole, the task primarily relies on visual data for decision-making.</p>
                     </div>
 
                     <!-- Task 3 -->
                     <div class="task-item">
-                        <h4 class="task-title">Task 3: Sensor Structure Design</h4>
+                        <h4 class="task-title">Track 3: Sensor Structure Design</h4>
                         <p class="task-desc">This section is subjectively evaluated, where teams design sensors following our tutorial and submit either SLDPRT or STL files. The judges will score this, and it accounts for 20% of the total score.</p>
                     </div>
                 </div>
@@ -201,41 +200,67 @@
         </div>
     </section>
 
-
     <section id="leaderboard" class="leaderboard-section">
         <div class="container">
             <h2 class="tm-section-title">LeaderBoard</h2>
-            <table class="leaderboard-table">
-                <!-- 表头部分 -->
-                <thead>
-                <tr>
-                    <th rowspan="2">Team</th> <!-- Team 列合并两行 -->
-                    <th colspan="2">Task 1 (100)</th> <!-- Task 1 列分为两个子任务 -->
-                    <th rowspan="2">Task 2 (100)</th> <!-- Task 2 列合并两行 -->
-                    <th rowspan="2">Task 3 (100)</th> <!-- Task 3 列合并两行 -->
-                    <th rowspan="2">Total (300)</th> <!-- 总分列合并两行 -->
-                </tr>
-                <tr>
-                    <th>Subtask 1.1 (50)</th>
-                    <th>Subtask 1.2 (50)</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>THU</td> <!-- Team 名称 -->
-                    <td>50</td> <!-- Subtask 1.1 成绩 -->
-                    <td>50</td> <!-- Subtask 1.2 成绩 -->
-                    <td>100</td> <!-- Task 2 成绩 -->
-                    <td>90</td> <!-- Task 3 成绩 -->
-                    <td>290</td> <!-- 总分 -->
+            <div class="leaderboard-container">
+                <!-- Task 1 Table -->
+                <table class="leaderboard-table">
+                    <thead>
+                    <tr><th colspan="4">Task 1</th></tr>
+                    <tr>
+                        <th>Team</th>
+                        <th>Subtask 1.1</th>
+                        <th>Subtask 1.2</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>THU</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>100</td>
+                    </tr>
+                    </tbody>
+                </table>
 
-                </tr>
-                </tbody>
-            </table>
+                <!-- Task 2 Table -->
+                <table class="leaderboard-table">
+                    <thead>
+                    <tr><th colspan="2">Task 2</th></tr>
+                    <tr>
+                        <th>Team</th>
+                        <th>Score</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>THU</td>
+                        <td>100</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!-- Task 3 Table -->
+                <table class="leaderboard-table">
+                    <thead>
+                    <tr><th colspan="2">Task 3</th></tr>
+                    <tr>
+                        <th>Team</th>
+                        <th>Score</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>THU</td>
+                        <td>90</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
-
-
 
     <section id="timeline" class="timeline-section">
         <div class="container">
