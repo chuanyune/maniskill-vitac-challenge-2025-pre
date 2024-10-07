@@ -188,27 +188,38 @@ blockquote {
   }
 }
 
+
 .tm-hero-text-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: center; /* 垂直居中对齐 */
+  align-items: center; /* 水平居中对齐 */
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -90px;
+  margin-top: 0; /* 调整这个值来控制垂直位置 */
+  padding: 20px; /* 可以根据需要增加内边距 */
 }
 
 .tm-hero-title {
-  font-size: 5rem;
-  color: black;
-  text-shadow: 2px 2px 2px #333;
+  font-size: 3.5rem; /* 标题的字体大小 */
+  color: black; /* 标题的颜色 */
+  text-shadow: 2px 2px 2px #333; /* 文本阴影效果 */
+  margin: 0; /* 移除默认外边距 */
+  position: relative; /* 允许进一步调整位置 */
+  top: -200px; /* 向上移动100px，控制标题的垂直位置 */
+  right: 300px; /* 向右移动50px，正值为向右，负值为向左 */
 }
 
-.tm-hero-subtitle {
-  text-shadow: 2px 2px 2px #333;
+
+@media (max-width: 768px) {
+  .tm-hero-title {
+    font-size: 3rem; /* 在小屏幕上调整字体大小 */
+  }
 }
+
 
 .tm-intro-next {
   position: absolute;
@@ -263,61 +274,6 @@ blockquote {
   padding: 20px 0 30px 0;
 }
 
-/* Testimonials */
-#testimonials {
-  color: white;
-  background-image: url(../img/infinite-loop-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;
-}
-
-@media (max-width: 991px) {
-  #testimonials {
-    background-image: url(../img/infinite-loop-02-mobile.jpg);
-  }
-}
-
-.tm-testimonials-content {
-  position: relative;
-  z-index: 100;
-}
-
-.tm-bg-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 70, 80, 0.2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.tm-testimonials-carousel {
-  max-width: 1050px;
-  margin: 0 auto;
-}
-
-.tm-testimonial-item {
-  max-width: 290px;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.tm-testimonial-item img {
-  border-radius: 50%;
-  margin-bottom: 35px;
-}
-
-.tm-testimonial-item figcaption {
-  text-align: right;
-  font-style: italic;
-  font-size: 1.1rem;
-}
-
 /* Work */
 
 .tm-section-desc {
@@ -347,7 +303,7 @@ blockquote {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #3ba0dd;
+  color: #000;
 }
 
 .tm-testimonials-carousel .slick-dots li button:before {
@@ -603,7 +559,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #38B;
+  color: #000;
   text-decoration: none;
 }
 
@@ -718,7 +674,7 @@ p {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #3498db;
+  background-color: #000;
   margin: 20px auto 0;
 }
 
@@ -737,7 +693,7 @@ p {
   left: 50%;
   height: calc(100% + 500px);
   width: 4px;
-  background: linear-gradient(to bottom, #3498db, #2980b9);
+  background: linear-gradient(to bottom, #000, #000);
   z-index: 1;
 }
 
@@ -776,7 +732,7 @@ p {
   left: 51%;
   width: 20px;
   height: 20px;
-  background: #3498db;
+  background: #000;
   border-radius: 50%;
   transform: translateX(-50%);
   transition: all 0.3s ease;
@@ -784,7 +740,7 @@ p {
 }
 
 .timeline-item:hover .timeline-dot {
-  background: #2980b9;
+  background: #000;
   box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
 }
 
@@ -811,12 +767,12 @@ p {
 }
 
 .timeline::-webkit-scrollbar-thumb {
-  background: #3498db;
+  background: #000;
   border-radius: 4px;
 }
 
 .timeline::-webkit-scrollbar-thumb:hover {
-  background: #2980b9;
+  background: #000;
 }
 
 .timeline::after {
@@ -898,7 +854,7 @@ p {
   text-align: center;
 }
 .leaderboard-table thead {
-  background-color: #3498db;
+  background-color: #040505;
   color: #ffffff;
 }
 .leaderboard-table th {
@@ -929,14 +885,14 @@ p {
   align-items: center;
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 2px solid #007bff;
+  border-right: 2px solid #000;
   min-width: 120px;
 }
 
 .news-date .date {
   font-size: 24px;
   font-weight: bold;
-  color: #007bff;
+  color: #000;
   margin-right: 5px;
 }
 
@@ -961,7 +917,7 @@ p {
 .news-circle {
   width: 8px;
   height: 8px;
-  background-color: #007bff;
+  background-color: #000;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -1059,7 +1015,7 @@ p {
 .task-title {
   font-size: 1.5em;
   margin-bottom: 15px;
-  color: #007bff;
+  color: #000;
 }
 
 .task-desc {
@@ -1088,7 +1044,7 @@ p {
 .btn {
   padding: 10px 20px;
   font-size: 1em;
-  background-color: #007bff;
+  background-color: #000;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1096,7 +1052,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #000;
 }
 
 .tm-nav-link.active {
@@ -1166,7 +1122,7 @@ p {
   margin-top: 1rem;
 }
 .slider-btn {
-  background-color: #007bff;
+  background-color: #000;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1176,7 +1132,7 @@ p {
   transition: background-color 0.3s ease;
 }
 .slider-btn:hover {
-  background-color: #0056b3;
+  background-color: #000;
 }
 .slider-btn:disabled {
   background-color: #cccccc;
@@ -1214,7 +1170,7 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .challenge-content h3 {
-  color: #3498db;
+  color: #000;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -1224,4 +1180,15 @@ p {
 }
 .challenge-content ul {
   padding-left: 20px;
+}
+
+#infinite {
+  background-color: #222;
+  background-image: url(../img/resized_head_bg_2200_1650.PNG);
+  background-repeat: no-repeat;
+  background-position: right bottom; /* 从右下角开始 */
+  background-size: cover; /* 多余部分裁剪 */
+  height: 100vh;
+  min-height: 375px;
+  position: relative;
 }
