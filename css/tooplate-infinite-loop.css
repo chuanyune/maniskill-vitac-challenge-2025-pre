@@ -205,12 +205,13 @@ blockquote {
 
 .tm-hero-title {
   font-size: 3.5rem; /* 标题的字体大小 */
+  font-size: 5rem; /* 标题的字体大小 */
   color: black; /* 标题的颜色 */
   text-shadow: 2px 2px 2px #333; /* 文本阴影效果 */
   margin: 0; /* 移除默认外边距 */
   position: relative; /* 允许进一步调整位置 */
-  top: -200px; /* 向上移动100px，控制标题的垂直位置 */
-  right: 300px; /* 向右移动50px，正值为向右，负值为向左 */
+  top: -80px; /* 向上移动100px，控制标题的垂直位置 */
+  /*right: 300px; !* 向右移动50px，正值为向右，负值为向左 *!*/
 }
 
 
@@ -572,6 +573,7 @@ p {
     padding-left: 0px;
   }
 
+
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 30px;
     padding-left: 30px;
@@ -922,12 +924,6 @@ p {
   margin-right: 15px;
 }
 
-.tm-intro-text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center; /* 使文本居中 */
-}
 
 .rocket {
   display: inline-block;
@@ -998,10 +994,11 @@ p {
 }
 
 .tm-intro-text {
-  text-align: left;
   font-size: 1.2em;
   margin-bottom: 30px;
   color: #666;
+  text-align: justify; /* 使文本两端对齐 */
+
 }
 
 .task-item {
@@ -1147,7 +1144,7 @@ p {
 }
 
 .task-gif {
-  width: 48%; /* Slightly less than 50% to account for gap */
+  width: 33%; /* Slightly less than 50% to account for gap */
   max-width: 400px;
   height: auto;
   border-radius: 4px;
@@ -1184,7 +1181,7 @@ p {
 
 #infinite {
   background-color: #222;
-  background-image: url(../img/resized_head_bg_2200_1650.PNG);
+  background-image: url(../img/head_bg2_resized.PNG);
   background-repeat: no-repeat;
   background-position: right bottom; /* 从右下角开始 */
   background-size: cover; /* 多余部分裁剪 */

@@ -101,7 +101,6 @@
         </div>
     </section>
 
-
     <section id="Overview" class="tm-section-pad-top">
         <div class="container">
             <div class="row tm-content-box">
@@ -116,7 +115,7 @@
                             Building upon last year's <a href="https://ai-workshops.github.io/maniskill-vitac-challenge-2024/">ManiSkill-Vitac-Challenge-2024</a>, we expand the discipline and design three tracks, each representing a different perspective on manipulation. We hope it will bring together researchers in tactile sensing, computer vision and policy learning, driving the development of advanced manipulation skill learning and embodied AI techniques.
                         </p>
                         <h3 class="tm-text-primary mb-3">The ManiSkill-ViTac Challenge 2025 features:</h3>
-                        <ul class="tm-list-style-1 tm-list-primary">
+                        <ul class="mb-4 tm-intro-text">
                             <li>Real-world robot evaluation</li>
                             <li>High-fidelity tactile and depth sensing simulation</li>
                             <li>Contact-rich manipulation tasks that closely resemble real-world applications</li>
@@ -131,7 +130,7 @@
     <section id="Challenge-format" class="challenge-format-section">
         <div class="container">
             <h2 class="tm-text-primary mb-4 tm-section-title">Challenge Format</h2>
-            <div class="challenge-content">
+            <div class="mb-4 tm-intro-text">
                 <p>This challenge consists of three independent tracks. Participating teams can choose to compete in 1-3 tracks when registering. Each track is completely separate and does not interfere with the others. The evaluation criteria and advancement standards for each track are different.</p>
 
                 <h3>Track 1: Visuotactile Manipulation</h3>
@@ -175,8 +174,9 @@
                 <div class="task-wrapper">
                     <div class="task-item">
                         <h4 class="task-title">Track 1: Visuotactile Manipulation</h4>
-                        <p class="task-desc">This track includes two tasks: peg insertion and lock opening. Similar to the ManiSkill challenge, we focus on evaluating the policy’s generalizability. Each task includes multiple objects of different shapes (e.g., the peg can be a cuboid or a trapezoid, and keys can have two or three teeth), which are unknown during evaluation. Therefore, the policy needs to be able to generalize to different pegs and keys.</p>
+                        <p class="mb-4 tm-intro-text">This track includes two tasks: peg insertion and lock opening. Similar to the ManiSkill challenge, we focus on evaluating the policy’s generalizability. Each task includes multiple objects of different shapes (e.g., the peg can be a cuboid or a trapezoid, and keys can have two or three teeth), which are unknown during evaluation. Therefore, the policy needs to be able to generalize to different pegs and keys.</p>
                         <div class="task-gifs">
+                            <img src="img/track1_setup.jpg" alt="Peg Insertion GIF" class="task-gif">
                             <img src="img/peg-insertion-sim2real.gif" alt="Lock Opening GIF" class="task-gif">
                             <img src="img/lock-opening-sim2real.gif" alt="Peg Insertion GIF" class="task-gif">
                         </div>
@@ -184,32 +184,19 @@
 
                     <div class="task-item">
                         <h4 class="task-title">Track 2: Tactile-Vision-Fusion Manipulation</h4>
-                        <p class="task-desc" style="text-align: left;">In this task, the experimental setup remains unchanged. However, compared to the only tactile task, a Realsense D415 is used to provide visual information, and the distance between the peg and the hole is increased. The gripper needs to determine which hole to insert the peg into based on the shape of the gripped peg. Since the tactile information remains the same during the approach to the hole, the task primarily relies on visual data for decision-making.</p>
-                        <div style="display: flex; justify-content: space-between;">
-                            <div>
-                                <video width="550" height="400" controls autoplay muted loop>
-                                    <source src="img/track2_sim.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div>
-                                <video width="550" height="400" controls autoplay muted loop>
-                                    <source src="img/track2_real.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
+                        <p class="mb-4 tm-intro-text">In this task, the experimental setup remains unchanged. However, compared to the only tactile task, a Realsense D415 is used to provide visual information, and the distance between the peg and the hole is increased. The gripper needs to determine which hole to insert the peg into based on the shape of the gripped peg. Since the tactile information remains the same during the approach to the hole, the task primarily relies on visual data for decision-making.</p>
+                        <div class="task-gifs">
+                            <img src="img/track2_setup.PNG" alt="Lock Opening GIF" class="task-gif">
+                            <img src="img/track2_sim.gif" alt="Lock Opening GIF" class="task-gif">
+                            <img src="img/track2_real.gif" alt="Peg Insertion GIF" class="task-gif">
                         </div>
-<!--                        <div class="task-gifs">-->
-<!--                            <img src="img/track2_sim.gif" alt="Lock Opening GIF" class="task-gif">-->
-<!--                            <img src="img/track2_real.gif" alt="Peg Insertion GIF" class="task-gif">-->
-<!--                        </div>-->
 
                     </div>
 
                     <!-- Task 3 -->
                     <div class="task-item">
                         <h4 class="task-title">Track 3: Sensor Structure Design</h4>
-                        <p class="task-desc" style="text-align: left;">This section is subjectively evaluated, where teams design sensors following our tutorial and submit either SLDPRT or STL files. The judges will score this, and it accounts for 20% of the total score.</p>
+                        <p class="mb-4 tm-intro-text" style="text-align: left;">This section is subjectively evaluated, where teams design sensors following our tutorial and submit either SLDPRT or STL files. The judges will score this, and it accounts for 20% of the total score.</p>
                     </div>
                 </div>
             </div>
@@ -223,7 +210,7 @@
 
     <section id="leaderboard" class="leaderboard-section">
         <div class="container">
-            <h2 class="tm-section-title">LeaderBoard</h2>
+            <h2 class="tm-text-primary mb-4 tm-section-title">LeaderBoard</h2>
             <div class="leaderboard-container">
                 <!-- Task 1 Table -->
                 <table class="leaderboard-table">
@@ -285,7 +272,7 @@
 
     <section id="timeline" class="timeline-section">
         <div class="container">
-            <h1 class="tm-section-title">Timeline</h1>
+            <h1 class="tm-text-primary mb-4 tm-section-title">Timeline</h1>
             <div class="timeline">
 <!--                <div class="timeline-item">-->
 <!--                    <div class="timeline-content">-->
