@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+    <link rel="icon" href="img/1727960445098.jpg" type="image/png">
 
   </head>
 
 
   <body>
     <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!--导航栏-->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
           <div class="container">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -330,75 +330,108 @@
     </section>
 
     <section id="timeline" class="timeline-section">
+        <style>
+            .timeline-section {
+                background-color: #f8f9fa;
+                padding: 50px 0;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+            .tm-section-title {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            .timeline {
+                display: flex;
+                overflow-x: auto;
+                padding: 20px 0 40px;
+                position: relative;
+            }
+            .timeline::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: #0b0b0b;
+                z-index: 1;
+            }
+            .timeline-item {
+                flex: 0 0 auto;
+                width: 200px;
+                margin: 0 20px;
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                position: relative;
+                z-index: 2;
+            }
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: #0b0b0b;
+                border-radius: 50%;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .timeline-content h3 {
+                margin: 0 0 10px;
+                color: #0b0b0b;
+                font-size: 1.2rem;
+            }
+            .timeline-content p {
+                margin: 0;
+                color: #666;
+                font-size: 0.9rem;
+            }
+        </style>
         <div class="container">
             <h1 class="tm-text-primary mb-4 tm-section-title">Timeline</h1>
             <div class="timeline">
-<!--                <div class="timeline-item">-->
-<!--                    <div class="timeline-content">-->
-<!--                        <h3>Workshop Announced</h3>-->
-<!--                        <p>TBD</p>-->
-<!--                    </div>-->
-<!--                    <div class="timeline-dot"></div>-->
-<!--                </div>-->
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Pre-release</h3>
                         <p>Oct 31, 2024</p>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3> Release</h3>
+                        <h3>Release</h3>
                         <p>Nov 15, 2024</p>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Stage1 deadline</h3>
                         <p>Jan 31, 2025</p>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Stage2 deadline</h3>
                         <p>Mar 20, 2025</p>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3> Winner Announcement</h3>
+                        <h3>Winner Announcement</h3>
                         <p>Mar 29, 2025</p>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
-
-<!--                <div class="timeline-item">-->
-<!--                    <div class="timeline-content">-->
-<!--                        <h3>Fifth Annual Embodied AI Workshop at CVPR</h3>-->
-<!--                        <p>Seattle Convention Center</p>-->
-<!--                        <p>Tuesday, June 18, 2024</p>-->
-<!--                        <p>8:50 AM - 6:00 PM PT</p>-->
-<!--                        <p>Summit 428</p>-->
-<!--                    </div>-->
-<!--                    <div class="timeline-dot"></div>-->
-<!--                </div>-->
-<!--                <div class="timeline-item">-->
-<!--                    <div class="timeline-content">-->
-<!--                        <h3>Challenge Winners Announced</h3>-->
-<!--                        <p>June 18, 2024 at the workshop. Check each challenge for specifics.</p>-->
-<!--                    </div>-->
-<!--                    <div class="timeline-dot"></div>-->
-<!--                </div>-->
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Award Ceremony</h3>
                         <p>2025 ICRA Workshop (TBD)</p>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
             </div>
         </div>
